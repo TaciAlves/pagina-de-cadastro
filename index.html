@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Cadastre-se</title> 
+</head>
+<body>
+    <div class="container">
+        <div class="cadastro">
+            <div class="logo">
+                <img class="logo__img" src="/assets/imgs/logo.png" alt="logo" >
+                <a href="/" class="logo__link"></a>
+            </div>
+            <h1 class="cadastro__title">Cadastre-se</h1>
+            <form class="form" action="#" data-form>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputName">Nome Completo</label>
+                    <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome Completo" required data-input >
+                    <i class="form__input-icon fas fa-user"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputEmail">E-mail</label>
+                    <input type="email" name="email" class="form__input-text" id="inputEmail" placeholder="E-mail" required data-input >
+                    <i class="form__input-icon fas fa-envelope"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputPassword">Senha</label>
+                    <input type="password" name="password" class="form__input-text" id="inputPassword" placeholder="Senha" required data-input >
+                    <i class="form__input-icon fas fa-lock"></i>
+                    <i class="form__input-icon fas fa-eye" data-password-eye></i>
+                    <span class="form__message-error" data-error-message></span>
+                    <div class="requirements">
+                        <div class="requeriments__progressBar" data-requirement-progressbar data-percentage="0"></div>
+                        <div class="requirements__description">A senha deverá ter:</div>
+                        <ul class="requirements__list">
+                            <li class="requirements__item" data-requirement-item="lowerUpperCase">
+                                <i class="fas "></i>
+                                Pelo menos 1 letra maiúscula e 1 letra minúscula</li>
+                            <li class="requirements__item" data-requirement-item="number">
+                                <i class=" fas "></i>
+                                Pelo menos 1 número</li>
+                            <li class="requirements__item" data-requirement-item="specialCharacter">
+                                <i class=" fas "></i>
+                                Pelo menos 1 caracter especial</li>
+                            <li class="requirements__item" data-requirement-item="minCharacter">
+                                <i class="fas "></i>
+                                Pelo menos 8 caracteres</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms" required data-input >
+                    <label class="form__label" for="inputTerms">Concordo com os <a href="/" class="form__link">termos</a> e <a href="/" class="form__link">política de privacidade</a>.</label>
+                    <span class="form__message-error" data-error-message></span>
+                    
+                </div>
+                <div class="form__group">
+                    <button class="form__button-submit" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/assets/js/showPassword.js"></script>
+    <script src="/assets/js/formValidation.js"></script>
+</body>
+</html>

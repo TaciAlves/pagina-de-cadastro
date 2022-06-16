@@ -1,0 +1,219 @@
+/* --------> RESET <------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;  /*configurando para 10px o tamanho padrão da fonte */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --------> ESTILIZAÇÃO GERAL <------- */
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #7A7471, #8DA293, #95AB9B ) ;
+}
+
+.cadastro {
+    width: 100%;
+    max-width: 40rem;
+    background-color: #8DA293;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.25);
+    margin: 2rem;
+    
+}
+
+/* .logo__link {
+    background: url('/assets/imgs/logo1.png');
+    height: 8.7rem;
+    width: 8.7rem;
+    display: block;
+} */
+
+.logo__img {
+    height: 11rem;
+    width: 11rem;
+}
+
+.cadastro__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5f5551;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    margin-top: .1rem;
+}
+
+.form__group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form__input-text {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #F5F6F8;
+    border: .2rem solid #7A7471;
+    outline: none;
+    position: relative;
+    padding-left: 4.5rem;
+    font-size: 1.1rem;
+}
+
+.form__input-text::placeholder {
+    font-weight: bold;
+    color: #C1C6D0;
+}
+
+.form__message-error {
+    color: #D95150;
+    font-size: .8rem;
+    margin-top: .2rem;
+    font-weight: 700;
+    display: none;
+}
+
+.form__input-text.error {
+    border-color: #D95150;
+}
+
+.form__label.hide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.form__input-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: .7rem;
+    color: #7A7471;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.form__input-checkbox {
+
+    cursor: pointer;
+}
+
+.form__input-icon.fa-eye{
+    left: auto;
+    right: 1rem;
+}
+
+.form__label {
+    font-size: .9rem;  
+    color: #5f5551;
+    font-weight: 700; 
+    margin-bottom: .5rem;
+    
+}
+
+.form__link {
+    color: #C1C6D0;
+}
+
+.form__button-submit {
+    background-color: #5f5551;
+    height: 2.6rem;
+    width: 12rem;
+    color: #C1C6D0;
+    border-radius: 2.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    margin-top: .7rem;
+}
+
+.form__button-submit:hover {
+    background-color: #7A7471;
+    transition: all .3s ease-in;
+}
+
+.requirements {
+    border-bottom: 1px solid #5f5551;
+    padding-bottom: .8rem;
+}
+
+.requeriments__progressBar {
+    height: .4rem;
+    width: 0;
+    border-radius: 5rem;
+    margin-bottom: 1.3rem;
+    transition: width .3s;
+}
+
+.requeriments__progressBar[data-percentage="25"] {
+    background-color: #D95150;
+}
+.requeriments__progressBar[data-percentage="50"] {
+    background-color: #F3E24A;
+}
+.requeriments__progressBar[data-percentage="75"] {
+    background-color: #F3E24A;
+}
+
+.requeriments__progressBar[data-percentage="100"] {
+    background-color: #5ea10c;
+}
+
+.requirements__description{
+    color:#5f5551;
+    font-size: 1rem;
+    margin-bottom: .4rem;
+    font-weight: 700;
+}
+
+.requirements__item{
+    color:#5f5551;
+    font-size: .8rem;
+    margin-bottom: .3rem;
+   font-weight: 700;
+}
+
+.requirements__item.checked{
+    color: #5ea10c;
+    font-weight: 900;
+}
+
+.requirements__item .fas::before {
+    content: "\f057";
+}
+
+.requirements__item.checked .fas::before {
+    content: "\f058";
+}
